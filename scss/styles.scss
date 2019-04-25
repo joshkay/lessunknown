@@ -377,6 +377,14 @@ footer {
         line-height: 0.9em;
     }
 
+    p {
+      color: lighten($base-color, 25%);
+      font-weight: 100;
+      font-size: 2em;
+      margin: 0px;
+      margin-bottom: 15px;
+    }
+
     h2 {
         color: lighten($base-color, 25%);
         font-weight: 500;
@@ -445,16 +453,46 @@ footer {
     ---------------------------
 */
 
-#about {
+.about {
     text-align: center;
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+
+    .about-image {
+      min-height: 300px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: 95%;
+
+      margin-bottom: 30px;
+      @media (min-width: 992px) {
+        margin-bottom: 0px;
+      }
+    }
+
+    .image-1 {
+      background-image: url(../images/cables.jpeg);
+    }
+    .image-2 {
+      background-image: url(../images/layout.jpg);
+    }
+    .image-3 {
+      background-image: url(../images/cables2.jpeg);
+    }
 
     h2 {
         color: $heading;
     }
 
-    p {
+    img {
+      width: 100%;
+    }
+
+    ul {
+      margin: 0
+    }
+
+    p, li {
         text-align: left;
         color: $text;
         margin: 0;
@@ -739,6 +777,22 @@ footer {
         margin: 0 0 15px 0;
         color: #fff;
         font-weight: 500;
+    }
+
+    .image-bogdan {
+      height: 350px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+
+      margin-bottom: 15px;
+      @media (min-width: 992px) {
+        margin-bottom: -50px;
+      }
+    }
+
+    .image-bogdan {
+      background-image: url(../images/bogdan.png);
     }
 }
 
